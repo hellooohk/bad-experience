@@ -27,6 +27,27 @@ $color-secondary : rgb(236, 236, 236);
             letter-spacing: 0.5rem;
         }
     }
+    .header__searchBar{
+        background-color: $color-secondary;
+        width: 50%;
+        border-radius: 1.5rem;
+        padding: 0.1rem 1rem;
+        margin: 0 1rem;
+        
+        img{
+            width: 1.2rem;
+        }
+        input{
+            font-size: 1.5rem;
+            background-color: $color-secondary;
+            padding: 0.5rem 0;
+            width: 100%;
+            border: none;
+            &:focus-visible{
+                outline: none;
+            }
+        }
+    }
     .header__items{
         position: relative;
         .header__items--open{
