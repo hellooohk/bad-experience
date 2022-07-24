@@ -6,6 +6,8 @@ $color-secondary: rgb(236, 236, 236);
   padding: 2rem;
   border-radius: 1rem;
   color:$color-primary;
+
+  
   .ExperienceCard__read{
     color: red;
     cursor: pointer;
@@ -27,3 +29,4 @@ $color-secondary: rgb(236, 236, 236);
     }
   }
 }
+

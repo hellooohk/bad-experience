@@ -17,7 +17,7 @@ export const Header = () => {
       <img src={Icon} alt="" />
       </div>
       <div className="header__items center y">
-        <span className="header__items--open" onClick={handleClick}>{visible ? "-" : "+"}</span>
+        <span className="header__items--open" onClick={handleClick}>{visible ? "✕" : "+"}</span>
         {visible && (
           <div className="header__menu y">
             <span>

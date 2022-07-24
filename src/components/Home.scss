@@ -2,4 +2,19 @@ $color-primary : rgb(32, 32, 32);
 $color-secondary : rgb(236, 236, 236);
 .Home{
     background: linear-gradient($color-primary,$color-secondary);
+    animation-name: scrollHome;
+    animation-duration: 1s;
+}
+@keyframes scrollHome {
+    0%{
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+    70%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
 }
