@@ -13,7 +13,7 @@ export const ExperienceCard = (props: ExperienceDetail) => {
           <span className='Tags__tag'>{category}</span>
         ))}
       </div>
-      <p>{props.description.substring(0,256)} <span>Read more...</span></p>
+      <p>{props.description.substring(0,256)} <span className='ExperienceCard__read'>Read more...</span></p>
     </div>
   );
 };
