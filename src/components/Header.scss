@@ -16,6 +16,7 @@ $color-secondary : rgb(236, 236, 236);
         color: $color-secondary;
     }
     .header__brand{
+        margin: 0;
         .header__brand--first{
             text-transform: lowercase;
             font-size: 2.5rem;

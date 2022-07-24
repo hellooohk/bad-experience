@@ -1,0 +1,23 @@
+$color-primary: #202020;
+$color-secondary: rgb(236, 236, 236);
+.Share{
+    padding: 1rem 2rem;
+    align-items: center;
+    margin-top: 5rem;
+    position: relative;
+    
+    .Share__input{
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+    .Share__button{
+        background-color: $color-primary;
+        color: $color-secondary;
+        &:hover{
+            background-color: $color-secondary;
+            color:$color-primary;
+        }
+    }
+   
+
+}

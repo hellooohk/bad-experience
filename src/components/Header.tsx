@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Icon from "../assets/magnifying-glass.png";
 import "./Header.scss";
 export const Header = () => {
@@ -8,10 +9,10 @@ export const Header = () => {
   };
   return (
     <header className="header x center sp-btw">
-      <div className="header__brand">
+      <Link to="/" className="header__brand">
         <span className="header__brand--first">Bad </span>
         <span className="header__brand--second">Experience</span>
-      </div>
+      </Link>
       <div className="header__searchBar x center">
          <input type="text" placeholder="Start typing..."/>
       <img src={Icon} alt="" />
@@ -21,7 +22,7 @@ export const Header = () => {
         {visible && (
           <div className="header__menu y">
             <span>
-              <a href="#">Share</a>
+              <Link to="share">Share</Link>
             </span>
             <span>
               <a href="#">About</a>
