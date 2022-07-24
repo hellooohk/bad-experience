@@ -4,8 +4,16 @@ $color-secondary : rgb(236, 236, 236);
 .header{
     background-color: $color-primary;
     color:$color-secondary;
-    padding: 0.5rem 2rem;
-    
+    padding: 1rem 2rem;
+    a{
+        text-decoration: none;
+        text-transform:  lowercase;
+        letter-spacing: 0.2rem;
+        margin: 0 1rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: $color-secondary;
+    }
     .header__brand{
         .header__brand--first{
             text-transform: lowercase;
@@ -18,4 +26,34 @@ $color-secondary : rgb(236, 236, 236);
             letter-spacing: 0.5rem;
         }
     }
+    .header__items{
+        position: relative;
+        .header__items--open{
+            font-size: 3.5rem;
+            cursor: pointer;
+        }
+    }
+    .header__menu{
+        position: absolute;
+        top: 5rem;
+        right: -0.5em;
+        animation-name: menuScroll;
+        animation-duration: 0.5s;
+        span{
+            margin: 0.3rem 0 0.5rem 0;
+        }
+    }
+}
+@keyframes menuScroll {
+   0%{
+    opacity: 0;
+    transform: translateY(-3rem);
+   }
+   80%{
+    transform: translateY(0.5rem);
+   }
+   100%{
+    opacity: 1;
+    transform: translate(0);
+   }
 }

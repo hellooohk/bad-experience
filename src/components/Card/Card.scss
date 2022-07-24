@@ -1,0 +1,25 @@
+$color-primary: rgb(32, 32, 32);
+$color-secondary: rgb(236, 236, 236);
+.ExperienceCard {
+  margin: 1rem 2rem;
+  background: $color-secondary;
+  padding: 2rem;
+  border-radius: 1rem;
+  color:$color-primary;
+  h3{
+    letter-spacing: 0.1rem;
+  }
+  p{
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+  }
+  .Tags {
+    margin: 1rem 0;
+    .Tags__tag {
+      margin-right: 1rem;
+      border: 0.1rem solid #000000;
+      padding: 0.25rem 1rem;
+      border-radius: 0.5rem;
+    }
+  }
+}
