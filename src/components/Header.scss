@@ -1,0 +1,21 @@
+$color-primary : rgb(32, 32, 32);
+$color-secondary : rgb(236, 236, 236);
+
+.header{
+    background-color: $color-primary;
+    color:$color-secondary;
+    padding: 0.5rem 2rem;
+    
+    .header__brand{
+        .header__brand--first{
+            text-transform: lowercase;
+            font-size: 2.5rem;
+            letter-spacing: 0.2rem;
+        }
+        .header__brand--second{
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 0.5rem;
+        }
+    }
+}
