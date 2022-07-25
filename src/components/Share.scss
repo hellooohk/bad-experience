@@ -1,22 +1,41 @@
+@use "sass:math";
 $color-primary: #202020;
 $color-secondary: rgb(236, 236, 236);
 .Share{
-    padding: 1rem 2rem;
     align-items: center;
-    margin-top: 5rem;
     position: relative;
-    
-    .Share__input{
-        width: 60%;
-        margin-bottom: 1rem;
-    }
-    .Share__button{
-        background-color: $color-primary;
-        color: $color-secondary;
-        &:hover{
-            background-color: $color-secondary;
-            color:$color-primary;
+    width: 100%;
+    .Share__form{
+        background-color: $color-secondary;
+        margin-top: 5rem;
+        padding: 3rem 5rem;
+        width: 50vw;
+        border-radius: 1rem;
+        position: relative;
+        z-index: -1;
+        .Form__desc{
+            height: 15rem;
+            
         }
+        .Share__btn{
+            border: none;
+            margin: 1rem 0;
+            padding: 0.8rem 1.8rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            color : $color-primary;
+            border: math.div(1,16)*1rem solid $color-primary ;
+            &:hover{
+                cursor: pointer;
+                color:$color-secondary;
+                background-color: $color-primary;
+            }
+        }
+    }
+
+    .Wave{
+        position: absolute;
+        z-index: -1;
     }
    
 
