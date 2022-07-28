@@ -1,18 +1,33 @@
 import { useState } from "react";
+import { useDispatch,useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { addExperience } from "../features/counter/counterSlice";
 import "./Share.scss";
 export const Share = () => {
+  const navigate = useNavigate();
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
-  const handleTitle = (e: any) => {
+  const data = useSelector((state) => state.counter.experienceData);
+  const dispatch = useDispatch();
+  const handleTitle = (e) => {
     setTitle(e.target.value);
   };
-  const handleDesc = (e: any) => {
+  const handleDesc = (e) => {
     setDesc(e.target.value);
   };
   const handleSubmit = () => {
     if (title.length === 0 || desc.length === 0) {
       return;
     }
+    const experienceData = {
+      id: data.length + 1,
+      title,
+      description:desc,
+      categories: ["Company", "Life","Unique"],
+
+    }
+    dispatch(addExperience(experienceData));
+    navigate("/");
   };
   return (
     <div className="Share y">
