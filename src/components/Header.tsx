@@ -21,13 +21,13 @@ export const Header = () => {
         <span className="header__items--open" onClick={handleClick}>{visible ? "✕" : "+"}</span>
         {visible && (
           <div className="header__menu y">
-            <span>
+            <span onClick={handleClick}>
               <Link to="share">Share</Link>
             </span>
-            <span>
+            <span onClick={handleClick}>
               <a href="#">About</a>
             </span>
-            <span>
+            <span onClick={handleClick}>
               <a href="#">Contact</a>
             </span>
           </div>
