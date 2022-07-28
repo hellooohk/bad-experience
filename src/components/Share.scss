@@ -15,7 +15,15 @@ $color-secondary: rgb(236, 236, 236);
         z-index: 0;
         .Form__desc{
             height: 15rem;
-            
+            font-family: "Roboto",sans-serif ;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.5rem;
+            padding: 0.3rem 0.5rem;
+            letter-spacing: 0.05rem;
+            &:focus-visible{
+                outline: none;
+            }
         }
         .Share__btn{
             border: none;

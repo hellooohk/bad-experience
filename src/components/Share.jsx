@@ -49,7 +49,7 @@ export const Share = () => {
         </div>
         <div className="y">
           <label htmlFor="">Description</label>
-          <input className="Form__desc" type="text" onChange={handleDesc} value={desc} />
+          <textarea className="Form__desc" type="text" onChange={handleDesc} value={desc} />
         </div>
         <button onClick={handleSubmit} className="Share__btn">Submit</button>
         
