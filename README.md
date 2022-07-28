@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Bad Experience [Live Demo](https://fluffy-dragon-f41aa8.netlify.app/).
+Bad Experience [Live Demo](https://fluffy-dragon-f41aa8.netlify.app/). In Progress...
 
 ## Available Scripts
 
