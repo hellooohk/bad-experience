@@ -21,6 +21,7 @@ $color-secondary: rgb(236, 236, 236);
             font-size: 1.5rem;
             padding: 0.3rem 0.5rem;
             letter-spacing: 0.05rem;
+            resize: none;
             &:focus-visible{
                 outline: none;
             }
